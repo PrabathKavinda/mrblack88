@@ -1,16 +1,19 @@
-## Hi there 👋
+Public Class Form1
 
-<!--
-**PrabathKavinda/PrabathKavinda** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Timer1.Start()
+    End Sub
 
-Here are some ideas to get you started:
+    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+        Label1.Text = Format(TimeOfDay, "hh")
+        Label3.Text = Format(TimeOfDay, "mm")
+        Label5.Text = Format(TimeOfDay, "ss")
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    End Sub
+
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Me.Close()
+    End Sub
+End Class
+
